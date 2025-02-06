@@ -13,6 +13,9 @@ body {
   color: #222;
   background: #fbfbfb;
 }
+.resume section h2 {
+  color: #451B93;
+}
 /* Link Styles */
 
 .skip-link {
@@ -54,6 +57,7 @@ nav {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  min-height: 54px;
 }
 
 .nav .name {
@@ -67,14 +71,15 @@ nav {
 .nav a {
   transition: all .5s;
   color: #D5FDE9;
+  padding: 20px 10px;
 }
-.nav li:hover {
+.nav li a:hover {
   background: #451B93;
 }
 header {
   line-height: 1.5;
 }
-section {
+section.hero {
   background: url('images/gradient-bg.webp') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
@@ -127,7 +132,6 @@ img.profile-image {
   border-radius: 6px;
   border: 1px solid #e0e0e0;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
-
   transition: all .5s;
 }
 .card:hover {
@@ -155,9 +159,31 @@ ul.skills {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 10px 20px;
   background: #111;
   margin: 0 auto;
+}
+
+.inside-footer.flex {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.inside-footer.flex-item {
+  flex: 1;
+}
+
+.resume .flex {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  text-align: left;
+}
+.resume section.flex-item {
+  flex: 1;
 }
 
 footer nav {
@@ -172,6 +198,11 @@ footer nav {
 footer nav a {
   color: #D5FDE9;
   font-weight: 500;
+  padding: 20px 10px;
+}
+footer nav a:hover {
+  color: #D5FDE9;
+  background: #451B93;
 }
 
 footer .copyright {
@@ -201,9 +232,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
+
 a.github {
   background-image: url(images/github.svg);
 }
