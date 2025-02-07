@@ -1,20 +1,25 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #222;
   background: #fbfbfb;
 }
+
+.resume main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .resume section h2 {
-  color: #451B93;
+  color: #451b93;
 }
 /* Link Styles */
 
@@ -61,26 +66,26 @@ nav {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+  display: block;
+  margin-right: auto;
+  color: white;
 }
 .nav li {
   padding: 10px;
 }
 .nav a {
-  transition: all .5s;
-  color: #D5FDE9;
+  transition: all 0.5s;
+  color: #d5fde9;
   padding: 20px 10px;
 }
 .nav li a:hover {
-  background: #451B93;
+  background: #451b93;
 }
 header {
   line-height: 1.5;
 }
 section.hero {
-  background: url('images/gradient-bg.webp') no-repeat top center ;
+  background: url("images/gradient-bg.webp") no-repeat top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -88,7 +93,7 @@ section.hero {
 /* SECTION Responsive Columns */
 /* container */
 .intro.flex {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,7 +109,7 @@ section.hero {
 }
 
 .resume main.flex {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 1200px;
@@ -120,7 +125,7 @@ section.hero {
   padding: 0 10px;
   border-radius: 5px;
   margin: 10px 0 0;
-} 
+}
 h1.tag.name {
   font-size: 4em;
 }
@@ -143,7 +148,7 @@ img.profile-image {
   border-radius: 6px;
   border: 1px solid #e0e0e0;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .card:hover {
   box-shadow: 0px 0px 4px 0px rgba(246, 100, 200, 0.2);
@@ -157,14 +162,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #E2F3F3;
+  background: #e2f3f3;
   color: black;
   padding: 5px 10px;
   margin: 5px 5px 10px;
 }
 
 .skills li:nth-child(odd) {
-  background: #F6F1FD;
+  background: #f6f1fd;
 }
 
 footer {
@@ -175,7 +180,7 @@ footer {
 }
 
 .inside-footer.flex {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 1200px;
@@ -189,7 +194,7 @@ footer {
 
 footer nav {
   background: transparent;
-  font-size: .75em;
+  font-size: 0.75em;
   min-height: 30px;
   padding: 0 10px;
   width: auto;
@@ -197,18 +202,18 @@ footer nav {
 }
 
 footer nav a {
-  color: #D5FDE9;
+  color: #d5fde9;
   font-weight: 500;
   padding: 20px 10px;
 }
 footer nav a:hover {
-  color: #D5FDE9;
-  background: #451B93;
+  color: #d5fde9;
+  background: #451b93;
 }
 
 footer .copyright {
   top: -8px;
-  font-size: .75em;
+  font-size: 0.75em;
   color: #ccc;
   display: inline-block;
 }
@@ -230,8 +235,8 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+  opacity: 0.4;
+  transition: all 0.5s;
 }
 
 a.github {
@@ -246,14 +251,13 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   section {
@@ -264,7 +268,6 @@ a.social:hover {
     max-width: 1200px;
     padding: 0;
   }
-
 
   main {
     padding-top: 20px;
@@ -279,7 +282,6 @@ a.social:hover {
     max-width: 100%;
     margin: 20px auto 0;
   }
-
 }
 
 /* Styles for smaller screens */
